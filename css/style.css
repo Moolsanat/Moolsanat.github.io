@@ -1,0 +1,10 @@
+.right-inner-addon{
+position:relative;
+top:8px;
+right:1px;
+height:3px;
+}
+.affix{
+top:0;
+width:100%;
+}

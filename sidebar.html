@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>index</title>
+		<meta name="viewport" content="width=device-width, initial-scale="1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/sidebar.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/respond.js"></script>	
+		
+	</head>
+	<body>
+		<!--Navigation_bar
+		=================================-->
+		
+		<div class="container">
+		<img src="img\t1.jpg" class="img-responsive" width="100%"><!--top image-->
+			<div class="navbar navbar-inverse" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="st_Xaviers.html">St.Xaviers College</a>
+				</div>
+				<div class="navbar-collapse collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li class="action"><a href="#">Home</a></li>
+						<li><a href="#">Gallary</a></li>
+						<li><a href="#">About</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
+							<ul class="dropdown-menu ">
+								<li><a href="#">+2</a></li>
+								<li><a href="#">Bachelor</a></li>
+								<li><a href="#">Masters</a></li>
+								
+							</ul> 
+						</li>	
+						<li><a href="sidebar.html">News</a></li>
+						<li><a href="#">Contacts</a></li>
+					
+					</ul>
+					<form>
+					<div class="right-inner-addon pull-right">
+						<input type="search" class="search-query span2" placeholder="Search"/>
+						<button type="submit" class="btn btn-info">Search</button>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper">
+		<!--Sidebar
+		============================-->
+		<div class="container">
+		<div id="sidebar-wrapper">
+			<h2> News on</h2>
+			<ul class="sidebar-nav">
+			    <li><a href="#">Exams</a></li>
+				<li><a href="#">Social Camps</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Sports</a></li>
+			</ul>
+		</div>
+		
+		<!--Page content
+		============================-->
+		<div id="page-content-wrapper">
+			
+				<div class="row">
+					<div class="col-lg-10">
+						<a href="#" class="btn btn-success" id="menu-toggle"> Menu</a>
+						<h1>News on St.Xaviers<h1>
+						<p>Here you can read all the things going on in St.Xaviers college</p>
+					</div>
+				</div>
+			
+		</div>
+		</div>
+		
+		
+		
+		</div><!--End of wrapper-->
+	
+	
+	<script src="jquery/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script>
+		$("#menu-toggle"). click(function(e){
+			e.preventDefault();
+			$("#wrapper").toggleClass("menuDisplayed")
+		})
+	</script>
+	
+</body>
+</html>
